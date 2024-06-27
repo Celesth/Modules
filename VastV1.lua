@@ -12,6 +12,10 @@ local Window = Fluent:CreateWindow({
     MinimizeKey = Enum.KeyCode.LeftControl -- Used when theres no MinimizeKeybind
 })
 
+
+local level = tonumber(player.PlayerFolder.Stats.Level.Value)
+
+local team = tonumber(player.PlayerFolder.Customization.Team.Value)
 --Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
 local Tabs = {
     Main = Window:AddTab({ Title = "Main", Icon = "file-code-2" }),
@@ -30,14 +34,9 @@ do
 
     Tabs.Main:AddParagraph({
         Title = "Level:",
-        Content = tonumber(player.PlayerFolder.Stats.Level.Value)
+        Content = (level)
     })
     
-    Tabs.Main:AddParagraph({
-        Title = "Level:",
-        Content = tonumber(player.PlayerFolder.Stats.Level.Value)
-    })
-
     Tabs.Main:AddParagraph({
         Title = "Level:",
         Content = tonumber(player.PlayerFolder.Stats.Level.Value)
@@ -45,7 +44,7 @@ do
     
     Tabs.Main:AddParagraph({
         Title = "Team",
-        Content = (player.PlayerFolder.Customization.Team.Value)
+        Content = (team)
     })
 -- Addons:
 -- SaveManager (Allows you to have a configuration system)
@@ -65,8 +64,8 @@ SaveManager:SetIgnoreIndexes({})
 -- use case for doing it this way:
 -- a script hub could have themes in a global folder
 -- and game configs in a separate folder per game
-InterfaceManager:SetFolder("FluentScriptHub")
-SaveManager:SetFolder("FluentScriptHub/specific-game")
+InterfaceManager:SetFolder("S1nse")
+SaveManager:SetFolder("S1nse/Ro-Ghoul")
 
 InterfaceManager:BuildInterfaceSection(Tabs.Settings)
 SaveManager:BuildConfigSection(Tabs.Settings)
