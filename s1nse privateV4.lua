@@ -1,4 +1,4 @@
-local player = Player.LocalPlayer
+local player = game.Players.LocalPlayer
 local level = tonumber(player.PlayerFolder.Stats.Level.Value)
 local team = tostring(player.PlayerFolder.Customization.Team.Value)
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
