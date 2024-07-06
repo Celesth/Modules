@@ -6,8 +6,8 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/d
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 
 local Window = Fluent:CreateWindow({
-    Title = "S1nse.private",
-    SubTitle = "d1vnity",
+    Title = "S1nse",
+    SubTitle = "private 0.1",
     TabWidth = 90,
     Size = UDim2.fromOffset(480, 310),
     Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
