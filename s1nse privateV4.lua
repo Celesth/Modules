@@ -33,6 +33,11 @@ do
     })
 
     Tabs.Main:AddParagraph({
+        Title = "Username:",
+        Content = (player)
+     })
+
+    Tabs.Main:AddParagraph({
         Title = "Level:",
         Content = (level)
     })
