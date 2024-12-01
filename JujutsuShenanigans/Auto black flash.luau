@@ -1,4 +1,40 @@
-pcall(function()
+local function blackflashgojo()
+    print("blackflashgojo start", tick())
+    game:GetService("ReplicatedStorage").Knit.Knit.Services.ReversalRedMaxService.RE.Activated:FireServer("false")
+    game:GetService("ReplicatedStorage").Knit.Knit.Services.GojoService.RE.RightActivated:FireServer()
+    print("blackflashgojo end", tick())
+end
+
+local function blackflashsmg()
+game:GetService("ReplicatedStorage").Knit.Knit.Services.FocusStrikeService.RE.Activated:FireServer("false")
+end
+
+local function blackflash()
+    print("blackflash start", tick())
+    game:GetService("ReplicatedStorage").Knit.Knit.Services.DivergentFistService.RE.Activated:FireServer("false")
+    print("blackflash end", tick())
+end
+
+local function blueflash()
+    print("blueflash start", tick())
+    game:GetService("ReplicatedStorage").Knit.Knit.Services.DivergentFistService.RE.Activated:FireServer("true")
+    print("blueflash end", tick())
+end
+
+local function run_blackflashgojo()
+    local success, err = pcall(function()
+        blackflashgojo()
+        wait(0.32)
+        blackflashgojo()
+    end)
+
+    if not success then
+        blueflash()
+    end
+end
+
+local function run_blackflash()
+    local success, err = pcall(function()
         blackflash()
         wait(0.32)
         blackflash()
