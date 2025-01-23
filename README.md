@@ -1,3 +1,6 @@
-## Just Source Codes For My Works.
+## Some Scripts, And Some To Learn
+- AnimationSpy [Open Sourced]
+```lua
+loadstring(game:GetObjects("rbxassetid://85246608752987")[1].Value)()
+```
 
-*some stuff i've made or stole..*
