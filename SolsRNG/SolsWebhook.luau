@@ -3,7 +3,7 @@ local TextChatService = game:GetService("TextChatService")
 local HttpService = game:GetService("HttpService")
 
 -- WebhookUrl
-local webhookUrl = "https://discord.com/api/webhooks/1317149700360769546/ACaxwJ8MyAR59WpNHANPz7GjL5D9tPJJHNnJHWrlNatWRcXL-vsDaUVb5Ht9fvejRWl6"
+local webhookUrl = "https://discord.com/api/webhooks/id/token"
 
 local function convertToMarkdown(rawText)
     rawText = rawText:gsub('<font color="([^"]+)">', '')
