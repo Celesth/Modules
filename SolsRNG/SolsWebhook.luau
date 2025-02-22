@@ -18,7 +18,7 @@ local function EmbedFormat(displayName, username, itemName, chance)
     local currentTime = os.date("%I:%M%p"):lower()
 
     local embed = {
-        ["title"] = "Rare Item Found!",
+        ["title"] = "Aura Rolled!",
         ["description"] = displayName .. " (@**" .. username .. "**) has found **" .. itemName .. "**!",
         ["color"] = 16711680, -- Red color
         ["fields"] = {
@@ -49,7 +49,7 @@ local function EmbedFormat(displayName, username, itemName, chance)
             }
         },
         ["footer"] = {
-            ["text"] = "God Hand[Heat-Seeker]"
+            ["text"] = "made by celesth"
         }
     }
 
