@@ -46,12 +46,12 @@ return HttpService:JSONEncode(data)
 end
 
 -- Function to Send Webhook
-local function sendWebhook(webhookUrl, data)
+local function sendWebhook(WebhookUrl, data)
 local headers = {["content-type"] = "application/json"
 }
 local request = http_request or request or HttpPost
 local webhookRequest = {
-    Url = webhookUrl, Body = data, Method = "POST", Headers = headers
+    Url = WebhookUrl, Body = data, Method = "POST", Headers = headers
 }
 request(webhookRequest)
 end
@@ -78,7 +78,7 @@ print("[Filtered]: " .. cleanedText)
 
 -- Create webhook data and send it
 local webhookData = EmbedFormat(displayName, username, itemName, chance)
-sendWebhook(webhookUrl, webhookData)
+sendWebhook(WebhookUrl, webhookData)
 end
 end
 
