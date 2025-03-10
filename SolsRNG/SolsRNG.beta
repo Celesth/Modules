@@ -3,7 +3,7 @@ local TextChatService = game:GetService("TextChatService")
 local HttpService = game:GetService("HttpService")
 
 -- Webhook URL
-local webhookUrl = ""
+_G.WebhookUrl = _G.WebhookUrl or "https://discord.com/api/webhooks/default_webhook_id/default_token"
 
 -- Convert text to Markdown format (removes font tags)
 local function convertToMarkdown(rawText)
