@@ -1,0 +1,8 @@
+{
+    "spec": 1,
+    "name": "Minecraft",
+    "previewText": "Minecraft Font Created By Minecraft",
+    "main": {
+        "MineCraft regular": "https://github.com/Celesth/Modules/raw/refs/heads/main/fonts/MinecraftRegular-Bmg3.otf?raw=1",
+    }
+}
