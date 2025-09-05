@@ -1,15 +1,3 @@
--- ModernNotifyModule.lua
--- Module: pink glass notifications (bottom-right)
--- Features:
---  * bottom-right stacking
---  * progress bar for timed toasts
---  * auto-updating text (returns updater)
---  * interactive buttons (Yes / No / Close) -> persistent until clicked
---  * top-right X close button
---  * icons (named or custom rbxassetid)
---  * Code font for all text (Enum.Font.Code)
---  * queue + maxVisible + configurable
-
 local Players = game:GetService("Players")
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
